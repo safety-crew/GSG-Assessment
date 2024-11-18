@@ -6,12 +6,16 @@ findTotalSumAndAverage();
 
 function findTotalSumAndAverage() {
   const total = nums.reduce(totalSum);
-  const average = total / nums.length;
+  const average = nums.reduce(totalAverage, 0);
 
   console.log(`Total: ${total}\nAverage: ${average}`);
 
   function totalSum(accumulator, currentValue) {
     return accumulator + currentValue;
+  }
+
+  function totalAverage(accumulator, currentValue) {
+    return accumulator + currentValue / nums.length;
   }
 }
 
