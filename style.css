@@ -1,0 +1,15 @@
+/* HTML & CSS Fundamentals: Task 1 */
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+ul li {
+  font-weight: bold;
+  color: green;
+}
